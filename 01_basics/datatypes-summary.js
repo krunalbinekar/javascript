@@ -37,3 +37,25 @@ const myFunction = function(){
 
 console.log(typeof bigNumber)
 
+// Stack (Primitive)(copy), Heap (Non-Primitive)(reference)
+
+let names = "sdasad"
+
+let anotherName = names
+anotherName = 'code';
+
+console.log(names);
+console.log(anotherName)
+
+
+let userOne = {
+    email:"xyz@yopmail.com",
+    upiId:2132313
+}
+
+let userTwo = userOne
+
+userTwo.email = "abc@yopmail.com"
+
+console.log(userOne);
+console.log(userTwo)
